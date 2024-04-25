@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <div class="contenedor--sinAside">
+        <header class="header">
+            <h1 class="header__titulo">Cromados - Barberia y salon unisex</h1>
+            <nav class="header__nav nav">
+                <ul class="nav__menu">
+                    <li class="nav__item"><a class="nav__link" href="../index.html">Inicio</a></li>
+                    <li class="nav__item"><a class="nav__link" href="/pages/sucursales.html">Sucursales</a></li>
+                    <li class="nav__item"><a class="nav__link" href="/pages/productos.html">Productos</a></li>
+                    <li class="nav__item"><a class="nav__link" href="/pages/cursos.html">Cursos</a></li>
+                    <li class="nav__item"><a class="nav__link" href="/pages/contacto.html">Contacto</a></li>
+                </ul>
+                <div class="nav__logo">
+                    <img class="nav__imglogo" src="../multimedia/logoredondo.jpg" alt="Logo cromados" />
+                </div>
+            </nav>
+        </header>
+
+        <body>
+            <main class="main">
+                <section class="main__formulario">
+                    <form action="">
+                        <fieldset>
+                            <legend>Tus datos</legend>
+                            <div class="formulario__div">
+                                <label for="name">Nombre:</label>
+                                <input type="text" name="name">
+                            </div>
+                            <div class="formulario__div">
+                                <label for="surname">Apellido:</label>
+                                <input type="text" name="surname">
+                            </div>
+                            <div class="formulario__div">
+                                <label for="mail">Tu correo electronico:</label>
+                                <input type="email" name="mail" required>
+                            </div>
+                            <div class="formulario__div">
+                                <label for="sucursal">Sucursal:</label>
+                                <select name="sucursal" id="">
+                                    <option value="croma1">💈 Intendente Martinez 584</option>
+                                    <option value="croma2">💈 Av Dalinger 487</option>
+                                </select>
+                            </div>
+                            <div class="formulario__div">
+                                <label for="tiposervicio">Que servicio buscas?</label>
+                                <input type="radio" name="tiposervicio" id value="barberia">Barberia
+                                <input type="radio" name="tiposervicio" id value="barberia">Salon unisex
+                                <input type="radio" name="tiposervicio" id value="barberia">Mayorista - productos
+                            </div>
+                            <div class="formulario__div">
+                                <label for="coment">Tu comentario:</label>
+                            </div>
+                            <div class="formulario__div">
+                                <textarea name="coment" rows="4" cols="50"></textarea>
+                            </div>
+                            <input class="formulario__input" type="submit" value="Enviar comentario">
+                            <input class="formulario__input" type="reset" value="Borrar datos">
+
+                        </fieldset>
+                    </form>
+                </section>
+            </main>
+        </body>
+        <footer class="footer">
+            <p>Cromados@gmail.com</p>
+            <p>Juan Pallero diseño web</p>
+            <img class="footer__img" src="../multimedia/instagram.png" alt="Nuestro Instagram @cromados">
+            <img class="footer__img" src="../multimedia/facebook.png" alt="Nuestro Facebook">
+        </footer>
+    </div>
+
+</body>
+
+</html>
