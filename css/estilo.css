@@ -23,9 +23,9 @@ body {
 }
 @media only screen and (max-width:768px){
     .contenedor{
-        width: 95%;
-        grid-template-columns: 2fr;
-        grid-template-rows: auto auto 1fr 1fr;
+        width: 90%;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
         grid-template-areas: 
         "header"
         "main"
@@ -34,26 +34,47 @@ body {
     }
     .header{
         flex-direction: column;
+        width: 90%;
     }
-    .header__logo{
+    .header__nav .nav{
+        width: 90%
+    }
+    .nav__logo{
         display: flex;
     }
-    .logo .imglogo{
+    .nav__imglogo{
         justify-content: center;
-        width: 200px;
+        width: 100px;
+        display: flex;
     }
 }
 @media only screen and (max-width:480px){
     .contenedor{
-        width: 100%;
+        width: 95%;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr auto auto auto;
         grid-template-areas: 
         "header"
         "main"
         "aside"
         "footer";
     }
+    .header{
+        flex-direction: column;
+        width: 90%;
+    }
+    .header__nav{
+        width: 100%
+    }
+    .nav__logo{
+        display: flex;
+    }
+    .nav__imglogo{
+        justify-content: center;
+        width: 100px;
+        display: flex;
+    }
+    
 
 }
 .contenedor--sinAside{
@@ -67,6 +88,50 @@ body {
     "header header"
     "main main"
     "footer footer";
+}
+@media only screen and (max-width:768px){
+    .contenedor--sinAside{
+        width: 90%;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr auto auto auto;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    }
+    .header{
+        flex-direction: column;
+        width: 90%;
+    }
+    .nav__logo{
+        display: flex;
+    }
+    .nav__imglogo{
+        justify-content: center;
+        width: 100px;
+    }
+}
+@media only screen and (max-width:480){
+    .contenedor--sinAside{
+        width: 100%;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr auto auto auto;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    }
+    .header{
+        flex-direction: column;
+        width: 90%;
+    }
+    .nav__logo{
+        display: flex;
+    }
+    .nav__imglogo{
+        justify-content: center;
+        width: 100px;
+    }
 }
 .header{
     width: 100%;
