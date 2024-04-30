@@ -6,7 +6,7 @@
 body {
     font-family: "Roboto", sans-serif;
     background-color: #e6c9a4;
-    background-image: url(../multimedia/fondobarberiapibes.jpg);
+    background-image: url(../multimedia/fondointentowebdos.webp);
     background-size:contain;
     background-attachment: fixed;
 }
@@ -34,18 +34,13 @@ body {
     }
     .header{
         flex-direction: column;
-        width: 90%;
+        width: 100%;
     }
-    .header__nav .nav{
-        width: 90%
+    .nav{
+        width: 100%;
     }
-    .nav__logo{
-        display: flex;
-    }
-    .nav__imglogo{
-        justify-content: center;
-        width: 100px;
-        display: flex;
+    .nav__menu{
+        width: 100%;
     }
 }
 @media only screen and (max-width:480px){
@@ -62,9 +57,6 @@ body {
     .header{
         flex-direction: column;
         width: 90%;
-    }
-    .header__nav{
-        width: 100%
     }
     .nav__logo{
         display: flex;
@@ -113,7 +105,7 @@ body {
 }
 @media only screen and (max-width:480){
     .contenedor--sinAside{
-        width: 100%;
+        width: 95%;
         grid-template-columns: auto;
         grid-template-rows: 1fr auto auto auto;
         grid-template-areas: 
@@ -131,6 +123,13 @@ body {
     .nav__imglogo{
         justify-content: center;
         width: 100px;
+        display: flex;
+    }
+    .contenedorcursos{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
     }
 }
 .header{
@@ -148,7 +147,6 @@ body {
     font-size: 2rem;
     font-weight: bold;
     background-color: #ffffff;
-    opacity: 0.9;
     padding: 10px;
     margin: 20px;
 }
@@ -157,22 +155,18 @@ body {
     opacity: 0.9;
     display: flex;
     width: 90%;
-    height: 90px;
+    height: 100px;
     border-radius: 10px;
-    margin: 0 auto;
-    justify-content: space-around;
 }
 .nav__logo {
     padding: 5px;
-    display: flex;
+    
 }
 .nav__imglogo{
     border-radius: 50%;
     padding: 5px;
-    justify-self: flex-end;
     height: 80px;
     width: 80px;
-    display: flex;
 }
 .nav__menu{
     list-style-type: none;
@@ -180,24 +174,25 @@ body {
     background-color: #9f86c0;
     display: flex;
     align-items: center;
+    justify-content: space-around;
+    width: 100%;
 }
 .nav__link{
     text-decoration: none;
     padding: 20px;
-    font-size: 1.2rem;
+    font-size: 1.7rem;
     justify-content: space-between;
     color: #ffffff;
 }
-.nav_link:hover{
-    background-color: black;
+.nav__link:hover{
+    color: #4e0655;
     border-radius: 50%;
 }
 .main{
-    background-color:#201e50;
+    background-color:#a8dadc;
     padding: 1.2rem;
     grid-area: main;
-    opacity: .8;
-    color: #ffffff;
+    color: #000000;
 }
 .article{
     padding: 10px;
@@ -218,7 +213,7 @@ body {
     padding: 15px;
     font-size: 1.4rem;
     font-weight: bold;
-    color: #ffffff;
+    color: #000000;
 }
 .article__imgSucursal{
     text-align: center;
@@ -233,9 +228,6 @@ body {
 .section__productos{
     padding: 10px;
     margin: 10px;
-}
-.section__img{
-    
 }
 .section__h3{
     text-align: center;
@@ -256,6 +248,7 @@ body {
     text-align: center;
     padding: 10px;
     margin: 10px;
+    color: #ffffff;
     background-color: black;
 }
 .cursos__p{
@@ -281,7 +274,7 @@ body {
 }
 .main__formulario{
     padding: 15px;
-    color: #ffffff;
+    color: #000000;
     text-align: center;
     margin: 15px;
 }
@@ -296,8 +289,7 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    background-color:#869d96;
-    opacity: .9;
+    background-color:#a8dadc;
     grid-area: aside;
 }
 .aside__parrafo{
@@ -305,7 +297,7 @@ body {
     line-height: 1.2rem;
     padding: 10px;
     text-align: center;
-    color: #ffffff;
+    color: #000000;
 }
 .aside__img{
     padding: 20px;
@@ -313,7 +305,7 @@ body {
 }
 .aside__h3{
     text-align: center;
-    color: #ffffff;
+    color: #000000;
 }
 .aside__iframe{
     width: 400px;
@@ -323,7 +315,7 @@ body {
     justify-content: space-between;
 }
 .footer{
-    background-color:#201e50;
+    background-color:#457b9d;
     grid-area: footer;
     opacity: .9;
     padding: 1rem;
